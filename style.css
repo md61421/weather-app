@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -9,7 +10,7 @@ body {
 }
 
 main {
-  height: 80svh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,10 +37,11 @@ main {
 .search input {
   border: 0;
   outline: 0;
+  width: 5em;
   background: #edf2f4;
   color: #222;
   padding: 10px 25px;
-  height: 60px;
+  height: 3.5em;
   border-radius: 30px;
   flex: 1;
   margin-right: 16px;
@@ -53,6 +55,7 @@ main {
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  aspect-ratio: 1/1;
   cursor: pointer;
 }
 
@@ -111,4 +114,29 @@ main {
   font-size: 14px;
   margin-top: 10px;
   display: none;
+}
+
+.info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info-socials{
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+a{
+  color: currentColor;
+  padding: 0 0.5em;
 }
